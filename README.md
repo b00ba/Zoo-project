@@ -21,7 +21,7 @@ Introduction
 > Ce mini-projet va permettre d'apprendre le principe de classe et
 > d'héritage. L'idée est de créer un Zoo en orient´e objet \`a l'aide du
 > langage Python 3. Attention ce document ne contient aucune correction,
-> il permet uniquement de d´efinir les sp´ecifications n´ecessaires \`a
+> il permet uniquement de d´efinir les sp´ecifications n´ecessaires à
 > la cr´eation de ce mini projet. Attention les digrammes de classes ne
 > sont pas complets, les getters et les setters ne sont pas pr´esents.
 > De plus certaines fonctionnalit´es n´ecessitent peut ˆetre d'autre
@@ -36,10 +36,10 @@ Introduction
 -   Un animal est d´efini par un nom, des point de vies et des points
     d'attaques.
 
--   Il y a diff´erent type d'animaux ayant des comportements unique en
+-   Il y a différent type d'animaux ayant des comportements unique en
     fonction de leur type.
 
-> Voici les diff´erentes ´ev\`enements du zoo :
+> Voici les différentes évènements du zoo :
 
 -   Il peut arriver que tous les animaux d'un enclos "parlent". Chaque
     type d'animal a son propre cri.
