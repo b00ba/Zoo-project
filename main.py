@@ -230,6 +230,42 @@ def test_feeding_enclo():
     print(test_animal1.get_life_point())
     print(test_animal2.get_life_point())
 
+def test_feeding_zoo():
+    """
+    fonction test_feeding_zoo
+    """
+    test_animal = Dog("Rex", 17, 10, "testing2", 4)
+    test_animal5 = Cat("kitty", 8, 10, "testing2", 4)
+    test_enclosure1 = Enclosure("enclos-1", [test_animal, test_animal5])
+    test_animal1 = Dog("Test1", 5, 10, "testing1")
+    test_animal2 = Cat("Test2", 25, 10, "testing2")
+    test_animal3 = Pigeon("Test3", 15, 10, "testing3")
+    test_animal4 = Eagle("Test4", 10, 10, "testing4")
+    test_enclosure2 = Enclosure("test", [test_animal1, test_animal2, test_animal3, test_animal4])
+    test_zoo = Zoo("zomba", [test_enclosure1, test_enclosure2])
+    test_zoo.feed_all(100)
+    print(test_animal.get_life_point())
+    print(test_animal1.get_life_point())
+    print(test_animal2.get_life_point())
+    print(test_animal3.get_life_point())
+    print(test_animal4.get_life_point())
+    print(test_animal5.get_life_point())
+
+def test_all_speaking_zoo():
+    """
+    fonction test_speaking_zoo
+    """
+    test_animal = Dog("Rex", 17, 10, "testing2", 4)
+    test_animal5 = Cat("kitty", 8, 10, "testing2", 4)
+    test_enclosure1 = Enclosure("enclos-1", list_animaux=[test_animal, test_animal5])
+    test_animal1 = Dog("Test1", 5, 10, "testing1")
+    test_animal2 = Cat("Test2", 25, 10, "testing2")
+    test_animal3 = Pigeon("Test3", 15, 10, "testing3")
+    test_animal4 = Eagle("Test4", 10, 10, "testing4")
+    test_enclosure2 = Enclosure("test", [test_animal1, test_animal2, test_animal3, test_animal4])
+    test_zoo = Zoo("zomba", [test_enclosure1, test_enclosure2])
+    print(str(test_zoo.all_speaking()))
+
 def test_create_enclos():
     """
     fonction test_create_enclo
@@ -240,6 +276,21 @@ def test_create_enclos():
     test_zoo = Zoo("zoo", [test_enclosure1])
     # assert isinstance(test_zoo.create_enclosure("test123"), Enclosure)
     print(str(test_zoo.create_enclosure("enclos1")))
+    print(str(test_zoo.to_string()))
+
+def zoo_to_string():
+    """
+    fonction to_string
+    """
+    test_animal = Dog("Rex", 5, 10, "testing2", 4)
+    test_animal5 = Cat("kitty", 5, 10, "testing2", 4)
+    test_enclosure1 = Enclosure("enclos-1", [test_animal, test_animal5])
+    test_animal1 = Dog("Test1", 5, 10, "testing1")
+    test_animal2 = Cat("Test2", 10, 10, "testing2")
+    test_animal3 = Pigeon("Test3", 5, 10, "testing3")
+    test_animal4 = Eagle("Test4", 10, 10, "testing4")
+    test_enclosure2 = Enclosure("test", [test_animal1, test_animal2, test_animal3, test_animal4])
+    test_zoo = Zoo("zomba", [test_enclosure1, test_enclosure2])
     print(str(test_zoo.to_string()))
 
 
