@@ -63,7 +63,7 @@ class Enclosure:
         """
         permet de nourrir tous les animaux de la liste
         """
-        if len(self.__list_animaux) > 0:
+        if self.__list_animaux:
             for anim in self.__list_animaux:
                 anim.eat(energy=energy)
 

@@ -91,6 +91,6 @@ class Zoo:
         """
         permet de faire attaquer tous les animaux de tous les enclos
         """
-        if len(self.__list_enclosure) > 0:
+        if self.__list_enclosure:
             for enclo in self.get_list_enclosure():
                 enclo.all_attacking()
